@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Joseph Leaman - Portfolio Site</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>       
+    <body>
+        <!-- Navbar -->
+        <section id="navbar" style="background-color: #2b394f">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2b394f">
+                  <a class="navbar-brand" href="#">Joseph Leaman<small class="text-muted"> - Portfolio Site</small></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="sites.html">Sites</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="photography.html">Photography</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Art & Design
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="2d.html">2D Design</a>
+                          <a class="dropdown-item" href="color.html">Color Theory</a>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="nav ml-auto"> 
+                      <li class="nav-item pr-2">
+                        <!-- Login/Register -->
+                        <button type="button" class="btn btn-primary pr-3" data-toggle="modal" data-target="#loginModal">
+                          Login
+                        </button>
+                          <!-- Login Modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#registerModal">
+                        Register
+                        </button>
+                          <!-- Register Modal -->
+                        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Register</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="passwordConfirm">Confirm Password</label>
+                                    <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password">
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </section>
+        <!-- Content -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <div class="container">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </div>
+                </ol>
+            </nav>
+        <section>
+            <div class="container">
+                <div class="row pt-4 pb-3">
+                    <div class="col-md-6">
+                        <i id="about-icon" class="fa fa-user fa-2x"></i>
+                        <h4 id="about" class="pb-2">About Me</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id fermentum velit. Duis vehicula sagittis turpis, eu laoreet felis porta a. Vestibulum eu lobortis mauris, eu sodales risus. Pellentesque viverra nulla nec euismod aliquet. Phasellus porttitor tempor dui, vitae vehicula nibh ultrices id. Quisque efficitur sit amet nibh sed dictum. Mauris cursus a nisi vitae efficitur. Sed blandit dolor ut odio eleifend pretium vitae condimentum augue. Aenean feugiat urna et nisl eleifend ornare. Fusce laoreet ipsum eget neque sagittis dignissim.</p>
+                        <p>
+                        Nunc volutpat et erat a condimentum. Integer sit amet est libero. Aliquam at neque eu orci tincidunt rutrum vel id metus. Sed maximus mauris elit, eu vulputate magna accumsan in. Maecenas lacinia non neque quis hendrerit. Nulla sodales ipsum nec velit placerat dictum. Mauris suscipit a turpis nec laoreet. Vivamus ullamcorper, arcu at porttitor ullamcorper, nunc nisl vehicula elit, eget auctor dolor erat ultricies metus. Phasellus scelerisque blandit varius. Maecenas sit amet nulla eget mi lacinia semper nec ac lorem. Pellentesque dictum justo tortor, nec pulvinar est scelerisque eu.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img id="me" src="img/me.JPG" alt="Picture of Myself" class="rounded">
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        
+        <!-- Contact Section-->
+        <section id="contact">
+            <div class="container">
+                <div class="row pt-4">
+                    <div class="col-lg-12">
+                        <div class="jumbotron">
+                          <h1 class="display-4">Need to Get in Touch?</h1>
+                          <p class="lead">Send me a message here</p>
+                          <hr class="my-4">
+                          <p>
+                              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Contact Me
+                              </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                              <div class="card card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <input id="form-subject" class="form-control form-control-sm" type="text" placeholder="Subject"> 
+                                        </div>
+                                        <div class="col-12 pt-2">
+                                            <textarea class="form-control pt-2" rows="3" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="col-12 pt-2">
+                                            <button type="submit" class="btn btn-primary">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="text-center pb-4">Contact through Social Media</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Platform</th>
+                              <th scope="col">Username</th>
+                              <th scope="col">Link</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row"><i class="fa fa-facebook-square fa-2x"></i></th>
+                              <td>Joey Leaman</td>
+                                <td><a href="https://www.facebook.com/">https://www.facebook.com</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><i class="fa fa-linkedin fa-2x"></i></th>
+                              <td>Joseph Leaman</td>
+                              <td><a href="https://www.linkedin.com/">https://www.linkedin.com</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"><i class="fa fa-instagram fa-2x"></i></th>
+                              <td>jal24</td>
+                              <td><a href="https://www.instagram.com/">https://www.instagram.com</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="shadow"></div>
+        <!-- Banner -->
+        <section>
+            <div class="container-fluid">
+                <div class="row pt-4">
+                    <div class="col-lg-12" id="ocean-banner">
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Begin Footer -->
+        <footer id="footer">
+            <div class="container pt-4 pb-2">
+                <div class="row">
+                    <div class="col text-center">
+                        <p><span id="year"></span> <small class="text-muted">&nbsp;<a href="mailto:jal24@pct.edu" alt="my email">Joseph Leaman</a></small></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        //Get current year for copyright
+        $('#year').text(new Date().getFullYear());
+        
+
+    </script>
+    </body>
+
+</html>

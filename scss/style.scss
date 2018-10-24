@@ -1,0 +1,128 @@
+@import 'bootstrap.css';
+
+#footer{
+    background-color: #2b394f;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+#me{
+    width: 500px;
+}
+
+body{
+    background-color: #eaf0f9;
+}
+
+//Banners
+#ocean-banner{
+    height: 200px;
+    background-image: url(../img/ocean_background.JPG);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-position: 0px 200px;  
+}
+
+#wildlife-banner{
+    height: 150px;
+    position: relative;
+    background: linear-gradient(
+                        rgba(20, 20, 20, 0.5), 
+                        rgba(20, 20, 20, 0.5)),
+                        url(../img/wildlife_background.JPG);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-attachment: fixed;
+    background-position: center bottom;
+    z-index: -1;
+
+}
+
+#landscape-banner{
+    height: 150px;
+    position: relative;
+    background: linear-gradient(
+                        rgba(20, 20, 20, 0.5), 
+                        rgba(20, 20, 20, 0.5)),
+                        url(../img/landscape_background.JPG);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-attachment: fixed;
+    background-position: center top;
+    z-index: -1;
+
+}
+
+.banner-heading{
+    position: relative;
+    color: white;
+}
+
+#about-icon{
+    position: relative;
+}
+
+#about{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.breadcrumb-item{
+    display: inline-block;
+}
+
+#form-subject{
+    width: 300px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
+.site-description{
+    color: black;
+}
+
+.breadcrumb, .jumbotron, .modal-body, .modal-header, .modal-footer{
+    background-color: #d9dde2;
+}
+
+@media only screen and (max-width: 1210px) {
+    #me{
+        width: 300px;
+    }
+    
+    body{
+        font-size: .9em;
+    }
+    
+    .card{
+        padding-bottom: 10px;
+    }
+}
